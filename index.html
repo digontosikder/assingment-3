@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
 
 
     <!-- Daisy Ui and Tellwind css Link  start-->
@@ -25,25 +27,32 @@
 
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-        .header {
-            background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
-        }
+.header {
+    background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
 
-        .main {
-            background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
-        }
+.main {
+    background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
 
-        .middle {
-            background: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 100%);
-        }
+.middle {
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 100%);
+}
 
-        .we-section {
+.we-section {
 
-            place-items: center;
+    place-items: center;
 
-        }
+}
+
+.from {
+    background-image: url("assets/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     </style>
 
 
@@ -53,7 +62,7 @@
 <body>
     <div class="overflow-hidden bg-white">
         <!-- Header section start -->
-        <header class=" bg-white header">
+        <header class=" bg-white header ">
             <!-- navigation section start -->
             <nav class="container mx-auto ">
                 <div class="navbar ">
@@ -90,11 +99,11 @@
                             </ul>
                         </div>
                         <div class="hidden lg:block space-x-6 lg:flex items-center lg:mr-4">
-                            <div class="bg-white rounded-full shadow-2xl">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="bg-white rounded-full shadow-inner">
+                                <i class="fa-solid fa-magnifying-glass p-3"></i>
                             </div>
-                            <div class="bg-white rounded-full shadow-2xl">
-                                <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="bg-white rounded-full shadow-inner">
+                                <i class="fa-solid fa-cart-shopping p-3"></i>
                             </div>
                         </div>
                         <div class="hidden lg:block">
@@ -156,7 +165,7 @@
 
         <!-- Main section start -->
         <main class="main">
-            
+
             <!-- Middle section  start-->
             <section class="bg-white middle    mt-10 lg:mt-28           ">
                 <!-- Thoughtful section start -->
@@ -236,7 +245,7 @@
                 <!-- process section end -->
 
                 <!-- card section start -->
-                <section class="container mx-auto w-[90%] m-auto">
+                <section class="container mx-auto w-[90%] m-auto pb-10 lg:pb-[108px]">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-11 mt-6">
                         <!-- card1 start-->
                         <div class="p-6 bg-[#E7C1D3] rounded-2xl">
@@ -322,7 +331,7 @@
                                 rustic charm and modern. The barn house captivates with its blend of rustic charm and
                                 modern .</p>
 
-                            <a class="btn bg-white border-none rounded-full lg:hover:bg-white  gap-2 mt-4">
+                            <a class="btn bg-white border-none rounded-full lg:hover:bg-white  gap-2 mt-1">
 
 
 
@@ -335,7 +344,7 @@
                             </a>
                         </div>
 
-                        
+
                     </div>
 
 
@@ -351,55 +360,183 @@
 
             <!-- second section -->
             <section class="container mx-auto mt-6 gap-7 lg:flex w-[90%] lg:w-[75%]">
-               <div class="bg-white shadow-2xl p-6 border border-[#D3D3D3] rounded-2xl">
-                <img class="w-full" src="assets/img3.png" alt="">
-               </div>
-               <!-- card 2 -->
+                <div class="bg-white shadow-2xl p-6 border border-[#D3D3D3] rounded-2xl">
+                    <img class="w-full" src="assets/img3.png" alt="">
+                </div>
+                <!-- card 2 -->
 
-               <div class="lg:flex items-center bg-white shadow-2xl rounded-2xl p-6 mt-6 lg:mt-0">
-                <div>
-                    <img class="w-full" src="assets/img4.png" alt="">
-                   </div>
-                   <div>
-                    
-                    <div class="ml-6">
-                        <div>
-                            <h1 class="text-2xl font-extrabold text-[#494949] mt-6">Commercial</h1>
-                        <p class="text-[#737373] font-medium mt-4 lg:w-[80%]">The barn house captivates with its blend of rustic charm and modern. </p>
-                        </div>
-                        <div>
-                            <a class="btn bg-white border-none rounded-full lg:hover:bg-white  gap-2 mt-4">
-    
-    
-    
-                                <div class="text-xl font-extrabold text-[#1C1C1C] ">
-                                    Book Consult
-                                </div>
-                                <div class="bg-[#ABEF5F] rounded-full flex items-center">
-                                    <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-white"></i>
-                                </div>
-                            </a>
-                        </div>
+                <div class="lg:flex items-center bg-white shadow-2xl rounded-2xl p-6 mt-6 lg:mt-0">
+                    <div>
+                        <img class="w-full" src="assets/img4.png" alt="">
                     </div>
-                    
-                   </div>
-               </div>
+                    <div>
 
-               <!-- third section -->
+                        <div class="ml-6">
+                            <div>
+                                <h1 class="text-2xl font-extrabold text-[#494949] mt-6">Commercial</h1>
+                                <p class="text-[#737373] font-medium mt-4 lg:w-[80%]">The barn house captivates with its
+                                    blend of rustic charm and modern. </p>
+                            </div>
+                            <div>
+                                <a class="btn bg-white border-none rounded-full lg:hover:bg-white  gap-2 mt-1">
 
-               <div class="bg-white shadow-2xl p-6 border border-[#D3D3D3] rounded-2xl mt-6 lg:mt-0">
-                <img class="w-full" src="assets/img5.png" alt="">
-               </div>
+
+
+                                    <div class="text-xl font-extrabold text-[#1C1C1C] ">
+                                        Book Consult
+                                    </div>
+                                    <div class="bg-[#ABEF5F] rounded-full flex items-center">
+                                        <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-white"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- third section -->
+
+                <div class="bg-white shadow-2xl p-6 border border-[#D3D3D3] rounded-2xl mt-6 lg:mt-0">
+                    <img class="w-full" src="assets/img5.png" alt="">
+                </div>
 
 
 
             </section>
 
 
+            <!-- Maid by me section  start-->
+            <section class="container mx-auto mt-32 items-center w-[90%]">
+
+                <div>
+                    <h1 class="text-7xl text-center text-black font-bold">Homes For Sale</h1>
+                    <p class="text-center m-auto mt-6 lg:w-[65%] ">It looks like you’re interested in homes for sale in
+                        Hedding, Mansfield Township, NJ. There are several listings available, ranging from cozy
+                        single-family homes to larger properties with more acreage</p>
+                </div>
+                <div class="lg:flex justify-center lg:justify-between mt-6">
+                    <!-- card 1 -->
+                    <div class="card glass w-96">
+                        <figure class="p-4 ">
+                            <img class="rounded-lg"
+                                src="https://static.vecteezy.com/system/resources/previews/023/309/303/non_2x/ai-generative-exterior-of-modern-luxury-house-with-garden-and-beautiful-sky-photo.jpg"
+                                alt="car!" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-black font-bold">Home</h2>
+                            <p>Feel free to customize this text to better fit the specific features and highlights of
+                                the home you’re selling.</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary text-white">Learn now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card glass w-96 mt-4 lg:mt-0">
+                        <figure class="p-4">
+                            <img class="rounded-lg"
+                                src="https://www.bankrate.com/2022/09/13091209/tips-for-selling-your-home.jpg?auto=webp&optimize=high&crop=16:9"
+                                alt="car!" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-black font-bold">Home</h2>
+                            <p>Welcome to your dream home! This beautiful 3-bedroom, 2-bathroom house is located in a
+                                quiet, family-friendly </p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary text-white">Learn now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third card -->
+                    <div class="card glass w-96 mt-4 lg:mt-0">
+                        <figure class="p-4">
+                            <img class="rounded-lg"
+                                src="https://na.rdcpix.com/2130801792/b57cb3fe060b4e365f4756e99b2b4287w-c254732rd-w832_h468_r4_q80.jpg"
+                                alt="car!" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-black font-bold">Home</h2>
+                            <p>Don’t miss out on this amazing opportunity! Contact us today to schedule a viewing and
+                                make this house your new home.
+
+                            </p>
+                            <div class="card-actions ">
+                                <button class="btn btn-primary text-white">Learn now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Maid by me section  end-->
 
 
 
-            
+            <!-- FROM SECTION START  -->
+
+            <section class="from py-[100px] mt-24">
+                <!-- Form text section  start-->
+                <div class="text-center">
+                    <button
+                        class="btn  rounded-full border-none  lg:ml-0   text-black font-bold bg-[#ABEF5F33] hover:bg-[#ABEF5F33]">
+                        <i class="fa-solid fa-arrow-right p-2 text-black "></i>
+
+                        Rinterio News</button>
+
+                    <h1 class="text-[40px] font-bold text-[#212121] ">Read Our Articles and News</h1>
+                    <p class="lg:w-[32%] mx-auto mt-4 text-[#494949]">The barn house captivates with its blend of rustic
+                        charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+
+                <!-- Form text section  end-->
+
+                <!-- form section start -->
+                <form class="mt-8">
+                    <div class="max-w-5xl mx-auto ">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-10">
+                            <div class="w-full">
+                                <input type="text" name="name" id="name"
+                                    class="w-full drop-shadow-2xl   py-4 px-5 rounded-full bg-[#FFFFFF]"
+                                    placeholder="First Name*" required />
+                            </div>
+                            <div class="w-full">
+                                <input type="text" name="email" id="text"
+                                    class="w-full drop-shadow-2xl   py-4 px-5 rounded-full bg-[#FFFFFF]"
+                                    placeholder="Last name*" required />
+                            </div>
+                            <div class="w-full mt-5">
+                                <input type="text"
+                                    class="w-full drop-shadow-2xl   py-4 px-5 rounded-full bg-[#FFFFFF]"
+                                    placeholder="Phone Number*" />
+                            </div>
+                            <div class="w-full mt-5">
+                                <input type="text"
+                                    class="w-full drop-shadow-2xl   py-4 px-5 rounded-full bg-[#FFFFFF]"
+                                    placeholder="Email Number*" />
+                            </div>
+                        </div>
+                        <div>
+                            <textarea name="message" cols="30" rows="8"
+                                class="w-full drop-shadow-2xl py-4 px-5 rounded-3xl bg-[#FFFFFF]"
+                                placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="mt-5 ">
+                            <input
+                                class="w-full  py-4 px-5 rounded-full bg-[#ABEF5F] text-black text-center text-xl font-bold"
+                                placeholder="Send Mail" />
+                        </div>
+                    </div>
+
+                </form>
+                <!-- form section end -->
+            </section>
+            <!-- FROM SECTION END  -->
+
+
+
+
+
+
 
 
 

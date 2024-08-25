@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
+   
 
 
     <!-- Daisy Ui and Tellwind css Link  start-->
@@ -24,36 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font link end  -->
-
-
-    <style>
-       @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
-.header {
-    background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
-}
-
-.main {
-    background: linear-gradient(0.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
-}
-
-.middle {
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 100%);
-}
-
-.we-section {
-
-    place-items: center;
-
-}
-
-.from {
-    background-image: url("assets/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    </style>
+     <link rel="stylesheet" href="./css/style.css">
 
 
     <title>Document</title>
@@ -407,11 +378,11 @@
 
 
             <!-- Maid by me section  start-->
-            <section class="container mx-auto mt-32 items-center w-[90%]">
+            <section class="container mx-auto mt-8 lg:mt-32 items-center w-[90%]">
 
                 <div>
-                    <h1 class="text-7xl text-center text-black font-bold">Homes For Sale</h1>
-                    <p class="text-center m-auto mt-6 lg:w-[65%] ">It looks like you’re interested in homes for sale in
+                    <h1 class="text-4xl lg:text-7xl text-center text-[#212121] font-bold">Homes For Sale</h1>
+                    <p class="text-center m-auto mt-6 lg:w-[65%] text-[#737373]">It looks like you’re interested in homes for sale in
                         Hedding, Mansfield Township, NJ. There are several listings available, ranging from cozy
                         single-family homes to larger properties with more acreage</p>
                 </div>
@@ -474,8 +445,9 @@
 
             <!-- FROM SECTION START  -->
 
-            <section class="from py-[100px] mt-24">
-                <!-- Form text section  start-->
+            <section class="from py-8 lg:py-[100px] my-3 lg:mt-24 ">
+                <div class="w-[90%] lg:w-[100%] m-auto">
+                    <!-- Form text section  start-->
                 <div class="text-center">
                     <button
                         class="btn  rounded-full border-none  lg:ml-0   text-black font-bold bg-[#ABEF5F33] hover:bg-[#ABEF5F33]">
@@ -529,6 +501,7 @@
 
                 </form>
                 <!-- form section end -->
+                </div>
             </section>
             <!-- FROM SECTION END  -->
 
@@ -548,7 +521,45 @@
 
 
         <!-- Footer section start -->
-        <footer>
+        <footer class="bg-[#1C1C1C]">
+            <section class=" w-[90%] m-auto py-16 lg:py-24 ">
+                <div >
+                   
+                        <a class="btn btn-ghost flex items-center">
+                            <div class="bg-[#ABEF5F] rounded-full flex items-center">
+                                <i class="fa-solid fa-arrow-right -rotate-45 p-2"></i>
+                            </div>
+                            <h1 class="text-3xl text-white font-extrabold">Rinterio</h1>
+                        </a>
+                        <p class="font-medium lg:w-[32%] text-center mx-auto mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <!-- footer Navigation bar start  -->
+
+                <div class=" mt-8 lg:mt-12">
+                    <ul class=" lg:flex justify-center items-center  lg:space-x-28 ">
+                        
+                        <li class="text-center mt-8 lg:mt-0">Home</li>
+                        <li class="text-center mt-8 lg:mt-0">Services</li>
+                        <li class="text-center mt-8 lg:mt-0">Portfolio</li>
+                        <li class="text-center mt-8 lg:mt-0">Blogs</li>
+                        <li class="text-center mt-8 lg:mt-0">Contact Us</li>
+                    </ul>
+                </div>
+
+                <!-- footer Navigation bar end  -->
+                <div class="flex justify-center">
+                    <button
+                        class=" btn border-none bg-[#ABEF5F] text-[#212121] font-extrabold mt-5 lg:mt-11 rounded-full lg:hover:bg-white px-28 lg:px-7">View
+                        Details
+
+                        <div class="bg-black  rounded-full">
+                            <i class="fa-solid fa-arrow-right -rotate-45 p-2 text-white"></i>
+                        </div>
+
+
+                    </button>
+                </div>                 
+            </section>
 
         </footer>
         <!-- Footer section end -->
